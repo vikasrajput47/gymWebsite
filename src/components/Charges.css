@@ -1,0 +1,52 @@
+/* General styles for the feeBox */
+.feeBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+    align-items: center;
+  }
+  
+  /* General styles for the table */
+  tbody {
+    font-size: 1.4rem;
+    color: white;
+  }
+  
+  /* Styles for table rows */
+  tr.row td {
+    padding: 2rem 17rem;
+    border: 1px solid #ccc;
+  }
+  
+  tr.row1 td {
+    padding: 2rem 18rem;
+    border: 1px solid #ccc;
+    background-color: rgb(191, 191, 191);
+    font-size: 1.7rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Styles for table headers */
+  tr.row th {
+    padding: 2rem 17rem;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 563px) {
+    tbody {
+      font-size: 1.2rem;
+    }
+  
+    tr.row td,
+    tr.row th,
+    tr.row1 td {
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+  }
+  

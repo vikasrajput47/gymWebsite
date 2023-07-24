@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}.bottomTop {
+  animation: bottom 1s ease;
+}
+@keyframes top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.topAnimation {
+  animation: top 1s ease;
+}
+
+
+
+  body {
+    /* background-image: url('./gym.jpg');
+    
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: black;
+    color: white;
+  }
+  .mobile{
+    display: none;
+  }
+   .navigationBar{ 
+    display: flex;
+    background-color: #00000075;
+    width: auto;
+    filter: drop-shadow(2px 4px 6px black);
+    height: 6rem;
+
+    justify-content: space-between;
+    align-items: center;
+   }
+   .icon img{
+    height: 4rem;
+    filter: invert(1);
+  }
+
+  .icon{
+    display: flex;
+    align-items: center;
+    
+  }
+
+
+  .name{
+    margin-left: 6rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .desktop{
+    display: contents;
+  }
+  .desktopItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .dItems{
+    padding: 1rem;
+    list-style: none;
+    font-size: 2rem;
+  }
+  .dItems:hover{
+    transition: 2s;
+    background-color: red;
+  }
+  .dItems a{
+    color: white;
+    text-decoration: none;
+  }
+  button{
+    color: black;
+  }
+.midSection{
+  margin-top: 1rem;
+
+  height: 43rem;
+  display: flex;
+  justify-content: space-around;
+   align-items: flex-end;
+   
+}
+.men{
+  width: 30rem;
+
+
+height: 40rem;
+border-radius: 30rem;
+}
+.men img{
+  height: inherit;
+  border-radius: 30rem;
+  filter: grayscale(1);
+}
+.midContent{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  font-size: 3rem;
+  width: 51rem;
+  text-align: center;
+  height: inherit;
+
+  
+}
+
+
+.midContent p{
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  
+}
+.join{
+ 
+  border-radius: 2rem;
+  margin-top: 4rem;
+  border: 0.4px solid #2c2c2c;
+  height: 4rem;
+  width: 12rem;
+
+}
+.join a{
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  
+}
+.join:hover {
+  transition: 2s;
+  background-color: red;
+ 
+}
+
+
+
+
+
+
+  @media screen and (max-width: 563px) {
+   body{
+   background-color: black;
+   }
+   .mobile button{
+    width: 4rem;
+    margin-right: 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    
+   }
+   .mobile button:hover{
+    transition: 2s;
+    background-color: red;
+   }
+   .mobile{
+    /* border: 2px solid red; */
+    display:flex;
+   flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5rem;
+    height: 6rem;
+    width: 4rem;
+   
+   }
+   .mobileNav{
+    margin-top: 0;
+   }
+   .mItems{
+    list-style: none;
+  }
+  .mItems:hover{
+    transition: 2s;
+    background-color: red;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    width: 4rem;
+    margin-left: 0.4rem;
+    
+   
+   }
+  a:hover{
+    cursor: pointer;
+  }
+  .desktop{
+    display: none;
+  }
+   .name{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    color: white;
+  }
+  .navigationBar{
+    height: 4rem;
+    background-color: black;
+  }
+  .mobileNav div{
+  background-color: black;
+  border-block-end: 1px solid #2d2d2d;
+   
+  }
+.midSection{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  width: 100%;
+
+}
+ .men{
+  margin-top: 3rem;
+
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+ .men img{
+  height: inherit;
+ }
+ .midContent{
+ width: 100%;
+ margin-top: 3rem;
+
+  
+}
+
+
+.midContent p{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  
+}
+.join{
+ 
+  border-radius: 2rem;
+  margin-top: 4rem;
+  border: 0.4px solid #2c2c2c;
+  height: 4rem;
+  width: 12rem;
+
+}
+.join a{
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  
+}
+  }
+  
